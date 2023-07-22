@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".Emi"
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enter Loan Amount ₹:"
+                android:textColor="@color/white"
+                android:textSize="22dp" />
+
+            <EditText
+                android:id="@+id/loanamount"
+                style="@style/Widget.AppCompat.Light.AutoCompleteTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:inputType="number"
+                android:hint="₹"
+                android:textColorHint="#a3a3a3"
+                android:textSize="20dp"></EditText>
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Interest Rate Per Year %:"
+                android:textColor="@color/white"
+                android:textSize="22dp" />
+
+            <EditText
+                android:id="@+id/rate"
+                style="@style/Widget.AppCompat.Light.AutoCompleteTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:inputType="number"
+                android:hint="%"
+                android:textColorHint="#a3a3a3"
+                android:textSize="20dp"></EditText>
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tenure (In Years):"
+                android:textColor="@color/white"
+                android:textSize="22dp" />
+
+            <EditText
+                android:id="@+id/tenure"
+                style="@style/Widget.AppCompat.Light.AutoCompleteTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:inputType="number"
+                android:hint="Years"
+                android:textColorHint="#a3a3a3"
+                android:textSize="20dp"></EditText>
+
+            <Button
+                android:id="@+id/button1"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CALCULATE"></Button>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="EMI :"
+                android:textColor="@color/white"
+                android:textSize="23dp" />
+
+
+            <TextView
+                android:id="@+id/emi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="#e61919"
+                android:textStyle="bold"
+                android:hint="₹"
+                android:textColorHint="#b04141"
+                android:textSize="22dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="TOTAL INTEREST FOR LOAN :"
+                android:textColor="@color/white"
+                android:textSize="23dp" />
+
+
+            <TextView
+                android:id="@+id/totalinterest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#e61919"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:hint="₹"
+                android:textColorHint="#b04141"
+                android:textSize="22dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="TOTAL TOTAL AMOUNT PAYABLE :"
+                android:textColor="@color/white"
+                android:textSize="23dp" />
+
+
+            <TextView
+                android:id="@+id/totalamount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#e61919"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:hint="₹"
+                android:textColorHint="#b04141"
+                android:textSize="22dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_marginTop="10dp"
+                android:textStyle="italic"
+                android:hint="(Principal + Interest)"
+                android:textColorHint="@color/white"
+                android:textSize="18dp"
+                android:layout_marginBottom="40dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</ScrollView>
